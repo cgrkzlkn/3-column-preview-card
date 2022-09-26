@@ -1,0 +1,144 @@
+:root {
+    /* Primary Colors */
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+
+    /* Neutral Colors */
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+
+    /* Fonts */
+    --lexendDeca: 'Lexend Deca', sans-serif;
+    --bigShoulders: 'Big Shoulders Display', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--lexendDeca);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    padding-top: 10vh;
+}
+
+.preview-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.card-sedan {
+    background-color: var(--brightOrange);
+}
+
+.card-suv {
+    background-color: var(--darkCyan);
+}
+
+.card-luxury {
+    background-color: var(--veryDarkCyan);
+}
+
+.card-icon {
+    width: 5rem;
+}
+
+.card-heading {
+    font-family: var(--bigShoulders);
+    text-transform: uppercase;
+    color: var(--veryLightGray);
+    font-size: 3.5rem;
+    padding: 2.5rem 0 2rem 0;
+}
+
+.card-desc {
+    color: var(--transparentWhite);
+    font-size: 1.5rem;
+    line-height: 1.75;
+    padding-bottom: 2rem;
+}
+
+.card-btn {
+    padding: 1.2rem 2.5rem;
+    border-radius: 2.5rem;
+    outline: none;
+    border: 2px solid var(--veryLightGray);
+    background-color: var(--veryLightGray);
+    font-family: inherit;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.card-sedan .card-btn {
+    color: var(--brightOrange);
+}
+
+.card-suv .card-btn {
+    color: var(--darkCyan);
+}
+
+.card-luxury .card-btn {
+    color: var(--veryDarkCyan);
+}
+
+.card-btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.attribution {
+    text-align: center;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.attribution a {
+    color: darkCyan;
+}
+
+@media screen and (min-width:1000px) {
+    .card {
+        padding: 6.5rem;
+    }
+
+    .card-heading {
+        padding: 3rem 0 2.5rem 0;
+        font-size: 4rem;
+    }
+
+    .card-desc {
+        padding-bottom: 8rem;
+    }
+
+    .card-btn {
+        font-size: 1.5rem;
+    }
+
+    .attribution {
+        font-size: 1.2rem;
+    }
+}
