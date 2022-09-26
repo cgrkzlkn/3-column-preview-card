@@ -123,7 +123,7 @@ body {
 
 @media screen and (min-width:1000px) {
     .card-icon {
-        width: 7rem;
+        width: 6.5rem;
     }
 
     .card-heading {
@@ -133,7 +133,7 @@ body {
 
     .card-desc {
         padding-bottom: 8rem;
-        padding-right: 3rem;
+        width: 92%;
     }
 
     .card-btn {
