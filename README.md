@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Stats Preview Card](https://cgrkzlkn.github.io/3-column-preview-card/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/3column-preview-card-using-css-grid-and-mobilefirst-workflow-RjnXOKiqw5)
+- Live Site URL: [3-Column Preview Card](https://cgrkzlkn.github.io/3-column-preview-card/)
 
 ## My process
 
