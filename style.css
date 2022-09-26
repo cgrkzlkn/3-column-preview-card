@@ -122,17 +122,18 @@ body {
 }
 
 @media screen and (min-width:1000px) {
-    .card {
-        padding: 6.5rem;
+    .card-icon {
+        width: 7rem;
     }
 
     .card-heading {
-        padding: 3rem 0 2.5rem 0;
+        padding: 3.5rem 0 2.5rem 0;
         font-size: 4rem;
     }
 
     .card-desc {
         padding-bottom: 8rem;
+        padding-right: 3rem;
     }
 
     .card-btn {
